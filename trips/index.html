@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<meta name="description" content="Tera Treks Homepage"/>
+		
+		<title>Trips</title>
+		
+		<link rel="stylesheet" type="text/css" href="../css/styles.css">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet"> 
+
+		<!-- Nav bar based on w3schools tutorials -->
+		<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+		<!-- https://www.w3schools.com/css/css_navbar.asp -->
+		<script>
+		function navDropDown() {
+			var x = document.getElementById("topnav");
+			if (x.className === "nav") {
+				x.className += " responsive";
+			} else {
+				x.className = "nav";
+			}
+		}
+		</script>
+
+	</head>
+	<body>
+		<header class="sticky">
+
+			<!-- Nav bar based on w3schools tutorials -->
+			<!-- https://www.w3schools.com/howto/howto_js_navbar_sticky.asp -->
+			<!-- https://www.w3schools.com/css/css_navbar.asp -->
+			<nav class="nav" id="topnav">
+				<a href="../index.html"><span class="left logo">Tera Treks</span></a>
+				<div class="right">
+					<a class="icon" href="javascript:void(0);" onclick="navDropDown()">&#9776;</a>
+					<div class="navbar">
+						<a href="#">Trips</a>
+						<a href="../photos/index.html">Photos</a>
+						<a href="../contact/index.html">Contact</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+		
+		
+		<main class="content">
+			<h1>Trips</h1>
+			
+			<br class="clear"><br><br>
+			
+			<div class="long-preview">
+				<a href="trips/index.html">Iceland</a>
+				<a href="projects/index.html"><img src="../images/iceland/iceland-1.jpg" alt="Iceland."></a>
+			</div>
+			
+			
+			<div class="long-preview">
+				<a href="local-trips/index.html">Norway</a>
+				<a href=""><img src="../images/norway/norway-1.jpg" alt="Norway."></a>
+			</div>
+			
+			
+			<div class="long-preview">
+				<a href="local-trips/index.html">Newfoundland</a>
+				<a href=""><img src="../images/newfoundland/newfoundland-1.jpg" alt="Photo Gallery."></a>
+			</div>
+			
+			
+			
+		</main>
+		
+		
+		<footer>
+			<address>
+			<br>
+			 &#9400; Tera Treks 2019<br>
+			</address>
+		</footer>
+</html>
